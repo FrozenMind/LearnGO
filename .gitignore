@@ -15,3 +15,10 @@
 
 # build dir for executables
 build/
+
+# ignore all files
+*
+# unignores all directories
+!*/
+# unignores all files with an extension
+!*.*
