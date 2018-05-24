@@ -7,8 +7,13 @@ import (
 )
 
 func main() {
+	//if no args given, use "s" as default
+	todo := "s"
+	if len(os.Args) > 1 {
+		todo = os.Args[1]
+	}
 	//switch first args
-	switch os.Args[1] {
+	switch todo {
 	//m = stopwatch prints every 100ms
 	case "m":
 		milliseconds()
